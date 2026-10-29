@@ -547,7 +547,7 @@ span{
 .footer_list li img{ 
     width: calc(15px + 2vw);
 }
-@media screen and (min-width:800px) {
+@media screen and (max-width: 800px) {
     .footer_container{
         flex-direction: row;
         flex-wrap: nowrap;
