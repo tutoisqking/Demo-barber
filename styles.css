@@ -513,6 +513,8 @@ span{
     padding: 60px;
     background-color: #444;
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
     gap: calc(10px + 10vw);
     justify-content: center;
@@ -532,7 +534,7 @@ span{
 .footer_list li{
     padding: 5px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
     gap: 10px;
@@ -544,4 +546,10 @@ span{
 }
 .footer_list li img{ 
     width: calc(15px + 2vw);
+}
+@media screen and (min-width:800px) {
+    .footer_container{
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
 }
